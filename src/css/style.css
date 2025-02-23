@@ -1,0 +1,77 @@
+body{
+    display: flex; /* para centralizar o quadro*/
+    justify-content: center;
+    align-items: center; /* para centralizar o quadro*/
+    min-height: 100vh; /* para centralizar o quadro*/
+    background-color: #000000;
+}
+
+.quadro{
+    position: relative;
+    display: flex; /* para centralizar o quadro*/
+    margin: 0 auto; /* para centralizar o quadro*/
+    align-items: center; /* para centralizar o quadro*/
+    background-color: #FCFCFC;
+    width: 655px;
+    height: 347px;
+    border-radius: 21px;
+    padding: 60px 37px;
+    box-shadow: 0px 20px 20px -10px #00000040;
+}
+
+.quadro .imagem{
+    display: flex;
+    position: absolute;
+    width: 278px;
+    height: 293px;
+    transform: translateX(-45%);
+}
+
+.quadro .perguntas{
+    margin-left: 190px;
+    width: 390px;
+}
+
+.quadro .perguntas .titulo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.lista-perguntas .pergunta{
+    background-color: yellow;
+    width: 390px;
+    margin-bottom: 15px;
+}
+
+.lista-perguntas .pergunta .titulo-pergunta{
+    background-color: blue;
+    width: 390px;
+    padding-right: 13px;
+}
+
+.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta .seta{
+    src: url('../image/seta.svg');
+}
+
+.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta .seta.aberta{
+    src: url('../image/seta_aberta.svg');
+}
+
+.lista-perguntas .pergunta .item-resposta{
+    padding-top: 10px;
+    padding-right: 43px;
+}
+
+.lista-perguntas .pergunta .item-resposta .resposta{
+    font-size: 1.5rem;
+    font-weight: 300;
+}

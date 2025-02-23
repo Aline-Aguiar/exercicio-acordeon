@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/reset.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>FAQ Acordeon</title>
 </head>
 <body>
     <div class="quadro">
-        <div class="image">
+        <div class="imagem">
             <img src="src/image/imagem_exemplo.png" alt="exemplo do produto" class="img-exemplo">
         </div>
         <div class="perguntas">
-            <h1>FAQ</h1>
+            <h1 class="titulo">FAQ</h1>
             <ul class="lista-perguntas">
                 <li class="pergunta">
                     <h3 class="titulo-pergunta">
-                        <button>Lorem ipsum dolor sit amet, consectetur ?
+                        <button class="btn-pergunta">Lorem ipsum dolor sit amet, consectetur ?
+                            <img src="src/image/seta.svg" class="seta aberta" alt="seta">
+                        </button>
+                    </h3>
+                    <div class="item-resposta">
+                        <span class="resposta">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
+                        </span>
+                    </div>
+                </li>
+                <hr>
+                <li class="pergunta">
+                    <h3 class="titulo-pergunta">
+                        <button class="btn-pergunta">Lorem ipsum dolor sit amet ?
                             <img src="src/image/seta.svg" class="seta" alt="seta">
                         </button>
                     </h3>
@@ -24,25 +42,12 @@
                         <span class="resposta">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
                         </span>
-                        <hr>
                     </div>
                 </li>
+                <hr>
                 <li class="pergunta">
                     <h3 class="titulo-pergunta">
-                        <button>Lorem ipsum dolor sit amet ?
-                            <img src="src/image/seta.svg" class="seta" alt="seta">
-                        </button>
-                    </h3>
-                    <div class="item-resposta">
-                        <span class="resposta">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum est. Mauris auctor nunc quis erat.
-                        </span>
-                        <hr>
-                    </div>
-                </li>
-                <li class="pergunta">
-                    <h3 class="titulo-pergunta">
-                        <button>Lorem ipsum dolor sit ?
+                        <button class="btn-pergunta">Lorem ipsum dolor sit ?
                             <img src="src/image/seta.svg" class="seta" alt="seta">
                         </button>
                     </h3>
