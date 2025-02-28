@@ -42,36 +42,48 @@ body{
     background-color: yellow;
     width: 390px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.lista-perguntas .pergunta .titulo-pergunta{
+.lista-perguntas .pergunta .btn-pergunta{
     background-color: blue;
-    width: 390px;
-    padding-right: 13px;
-}
-
-.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta{
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    width: 390px;
     font-size: 1.7rem;
     font-weight: 500;
+    padding-right: 13px;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
-.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta .seta{
+.lista-perguntas .pergunta .btn-pergunta span{
+    max-width: 100%;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.lista-perguntas .pergunta .btn-pergunta .seta{
     src: url('../image/seta.svg');
 }
 
-.lista-perguntas .pergunta .titulo-pergunta .btn-pergunta .seta.aberta{
+.lista-perguntas .pergunta .btn-pergunta .seta.aberta{
     src: url('../image/seta_aberta.svg');
 }
 
 .lista-perguntas .pergunta .item-resposta{
     padding-top: 10px;
     padding-right: 43px;
+    opacity: 0;
+    height: 0;
 }
 
 .lista-perguntas .pergunta .item-resposta .resposta{
     font-size: 1.5rem;
     font-weight: 300;
+}
+
+.lista-perguntas .pergunta .item-resposta.ativo{
+    height: 100%;
+    opacity: 1;
 }
