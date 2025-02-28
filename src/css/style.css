@@ -67,15 +67,17 @@ body{
     src: url('../image/seta.svg');
 }
 
-.lista-perguntas .pergunta .btn-pergunta .seta.aberta{
+/* .lista-perguntas .pergunta .btn-pergunta .seta.aberta{
     src: url('../image/seta_aberta.svg');
-}
+} */
 
 .lista-perguntas .pergunta .item-resposta{
     padding-top: 10px;
     padding-right: 43px;
     opacity: 0;
     height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
 }
 
 .lista-perguntas .pergunta .item-resposta .resposta{
@@ -86,4 +88,12 @@ body{
 .lista-perguntas .pergunta .item-resposta.ativo{
     height: 100%;
     opacity: 1;
+}
+
+.seta{
+    transition: transform .2s linear;
+}
+
+.pergunta:has(.ativo) .seta{
+    transform: rotate(180deg);
 }
