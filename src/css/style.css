@@ -3,7 +3,7 @@ body{
     justify-content: center;
     align-items: center; /* para centralizar o quadro*/
     min-height: 100vh; /* para centralizar o quadro*/
-    background-color: #000000;
+    background-color: #E5E5E5;
 }
 
 .quadro{
