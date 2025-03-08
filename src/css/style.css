@@ -35,18 +35,21 @@ body{
 .quadro .perguntas .titulo{
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
 .lista-perguntas .pergunta{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 390px;
-    margin-bottom: 15px;
+    margin-top: 15px;
     cursor: pointer;
 }
 
+.lista-perguntas hr{
+    color:#D4D4D4;
+}
+
 .lista-perguntas .pergunta .btn-pergunta{
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     width: 390px;
     font-size: 1.7rem;
@@ -88,6 +91,7 @@ body{
 .lista-perguntas .pergunta .item-resposta.ativo{
     height: 100%;
     opacity: 1;
+    margin-bottom: 15px;
 }
 
 .seta{
